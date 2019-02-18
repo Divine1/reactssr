@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-function-bind": "^7.2.0",
     "@svgr/webpack": "4.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -58,7 +59,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "dev:build:server": "webpack --config webpack.server.js --watch",
-    "dev:server" : "nodemon --watch build --exec \"node build/bundle.js\""
+    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\""
   },
   "eslintConfig": {
     "extends": "react-app"

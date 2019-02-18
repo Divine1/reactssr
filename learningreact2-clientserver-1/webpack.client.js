@@ -3,11 +3,10 @@ const path = require("path");
 
 module.exports = {
     mode  : "development",
-    target : "node",
-    entry : "./server/index.js",
+    entry : "./client/client.js",
     output : {
         filename : "bundle.js",
-        path : path.resolve(__dirname,"build")
+        path : path.resolve(__dirname,"global")
     },
     module : {
         rules :[
@@ -34,10 +33,5 @@ module.exports = {
                 }
             }
         ]
-    },
-    /*plugins: [
-        // Stage 0
-        "@babel/plugin-proposal-function-bind"
-    ]*/
-        
+    } 
 };

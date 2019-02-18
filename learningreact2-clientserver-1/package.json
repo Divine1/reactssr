@@ -1,0 +1,32 @@
+{
+  "name": "learningreact2-clientserver-1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev:build:server": "webpack --config webpack.server.js --watch",
+    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
+    "dev:build:client": "webpack --config webpack.client.js --watch"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
+  }
+}
